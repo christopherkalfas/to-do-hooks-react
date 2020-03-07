@@ -49,7 +49,7 @@ function App(){
       isCompleted: false
     },
     {
-      text: 'Because the Hook Brings you back.',
+      text: 'Laundry',
       isCompleted: false
     },
     {
@@ -89,7 +89,9 @@ function App(){
             removeTodo={removeTodo}
           />
         ))}
-          <TodoForm addTodo={addTodo} />
+          <div>
+            <TodoForm addTodo={addTodo} />
+          </div>
       </div>
       <Footer />
     </div>
