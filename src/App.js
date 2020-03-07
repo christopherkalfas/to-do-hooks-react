@@ -10,7 +10,7 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
       className='todo'>
       { todo.text }
       <div>
-        <button onClick={ ()=> completeTodo(index) }>Complete</button>
+        <button onClick={ ()=> completeTodo(index)} >Complete</button>
         <button onClick={ ()=> removeTodo(index) }>X</button>
       </div>
     </div>
@@ -65,6 +65,7 @@ function App(){
 
   const completeTodo = index => {
     const newTodos = [...todos]
+
     newTodos[index].isCompleted = true
     setTodos(newTodos)
   }
